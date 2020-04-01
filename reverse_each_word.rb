@@ -1,15 +1,19 @@
 def reverse_each_word(sentence)
   reversed=[]
-  sentence.split.each do |word|
+  array=sentence.split
+  array.each do |word|
     reversed<<"#{word.reverse}"
   end
   reversed.join(" ")
 end
 
-def reverse_each_word(sentence)
+rdef reverse_each_word(sentence)
   reversed=[]
-  sentence.split.collect do |word|
+  array=sentence.split
+  array.each do |word|
     reversed<<"#{word.reverse}"
   end
   reversed.join(" ")
 end
+
+reverse_each_word("I am a girl.")
